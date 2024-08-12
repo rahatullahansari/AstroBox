@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+      AstroBox - A Virtual Planetary Exploration || NASA INTERNATIONAL SPACE
+      APPS CHALLENGE
+    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="AstroBox Team" />
+    <link rel="icon" href="/images/astrobox.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is required for experimental AR features in Canary -->
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+    <!-- <script src="https://unpkg.com/@magicleap/prismatic@0.18.2/prismatic.min.js"></script> -->
+  </head>
+
+  <body>
+    <div id="video">
+      <div class="preloader">
+        <div class="preloader-bounce">
+          A<span></span> S<span></span> T<span></span> R<span></span> O<span
+          ></span> B<span></span> O<span></span>
+          X
+        </div>
+      </div>
+
+      <header id="header">
+        <div class="container-fluid">
+          <div class="navbar">
+            <a href="#slide01" title="AstroBox">
+              <img id="logo" src="images/astrobox.png" alt="AstroBox Logo" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <video autoplay muted loop id="myVideo">
+        <source src="images/video2-bg.mp4" type="video/mp4" />
+      </video>
+
+      <div id="fullpage" class="fullpage-default">
+        <div class="section animated-row" data-section="slide00">
+          <div class="section-inner">
+            <div class="welcome-box">
+              <span class="welcome-first animate" data-animate="fadeInUp"
+                >Hello World! Welcome to <strong><b>AstroBox</b></strong></span
+              >
+              <div class="container">
+                <p>
+                  <span class="typed-text"></span
+                  ><span class="cursor">&nbsp;</span>
+                </p>
+              </div>
+              <div class="scroll-down next-section animate">
+                <img src="images/mouse-scroll.png" alt="" /><span
+                  >Scroll Down</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1st tool -->
+        <div class="section animated-row" data-section="slide02">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Scoop</h2>
+                    <span
+                      >Used to pick up the top-most layer of the Martian
+                      surface.</span
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Scoop.glb"
+                          alt="Scoop used by NASA"
+                          ar
+                          camera-orbit="90deg 0deg 1m"
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd tool -->
+        <div class="section animated-row" data-section="slide07">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Drive Tube</h2>
+                    <span
+                      >Used to take out samples of the Martian regolith from
+                      beneath the top-most layer.</span
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Tube.glb"
+                          alt="Drive Tube used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #3rd tool -->
+        <div class="section animated-row" data-section="slide05">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Rake</h2>
+                    <span>Used to collect larger than pea-sized rocks.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Rake.glb"
+                          alt="Rake used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #4th tool -->
+        <div class="section animated-row" data-section="slide03">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Tongs</h2>
+                    <span>Used to pick up loose rocks.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Tongs.glb"
+                          alt="Tongs used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #5th tool -->
+        <div class="section animated-row" data-section="slide04">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Extension Rod</h2>
+                    <span>Used to operate scoop, rake and drive tubes.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Handle.glb"
+                          alt="Extension Rod used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #6th tool -->
+        <div class="section animated-row" data-section="slide01">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Hammer</h2>
+                    <span
+                      >Used to break off larger rocks and/or regolith
+                      pieces.</span
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Hammer.glb"
+                          alt="Hammer used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="0deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #7th tool -->
+        <div class="section animated-row" data-section="slide11">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Sample Bag</h2>
+                    <span>Used to store dust samples.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Bag.glb"
+                          alt="Sampling Bag used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #8th tool -->
+        <div class="section animated-row" data-section="slide06">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Sample Container</h2>
+                    <span>Used to store regolith samples.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Container.glb"
+                          alt="Container used by NASA"
+                          ar
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="180deg 50deg 1m"
+                          background-color="transparent"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #9th tool -->
+        <div class="section animated-row" data-section="slide08">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Handheld Digital Weighing Scale</h2>
+                    <span>Used to weigh sample bags and containers.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Weight.glb"
+                          alt="Handheld Digital Weighing Machine used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- #10th tool -->
+        <div class="section animated-row" data-section="slide10">
+          <div class="section-inner">
+            <div class="about-section">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                  <div class="title-block animate" data-animate="fadeInUp">
+                    <h2>Sample Box</h2>
+                    <span>Used to store sample bags and containers.</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <figure class="about-img animate" data-animate="fadeInUp">
+                        <model-viewer
+                          src="third_party/models/Box.glb"
+                          alt="Sample Box used by NASA"
+                          ar
+                          background-color="transparent"
+                          preload
+                          reveal-when-loaded
+                          auto-rotate
+                          controls
+                          camera-orbit="60deg 90deg 1m"
+                        >
+                        </model-viewer>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="social-icons">
+        <div class="text-right">
+          <ul
+            class="social-icons navigation-menu nav navbar-nav navbars"
+            id="nav"
+          >
+            <li data-menuanchor="slide02" class="active">
+              <a href="#slide02">Scoop</a>
+            </li>
+            <li data-menuanchor="slide03">
+              <a href="#slide03">Drive Tube</a>
+            </li>
+            <li data-menuanchor="slide04">
+              <a href="#slide04">Rake</a>
+            </li>
+            <li data-menuanchor="slide05">
+              <a href="#slide05">Tangs</a>
+            </li>
+            <li data-menuanchor="slide06">
+              <a href="#slide06">Extension Rod</a>
+            </li>
+            <li data-menuanchor="slide07">
+              <a href="#slide07">Hammer</a>
+            </li>
+            <li data-menuanchor="slide08">
+              <a href="#slide08">Sample Bag</a>
+            </li>
+            <li data-menuanchor="slide09">
+              <a href="#slide09">Sample Container</a>
+            </li>
+            <li data-menuanchor="slide10">
+              <a href="#slide10">Weighing Scale</a>
+            </li>
+            <li data-menuanchor="slide11">
+              <a href="#slide11">Sample Box</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.min.js"></script>
+
+    <script src="js/scrolloverflow.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    <!-- 💁 Include both scripts below to support all browsers! -->
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js"
+    ></script>
+
+    <!-- The model-viewer custom element (supports transparent, see https://github.com/GoogleWebComponents/model-viewer/pull/268) -->
+    <script src="https://assets.website-files.com/5c013e2442f37ff004567ee6/5c17c0247910f0e6fe21dde9_model-viewer.min.js.txt"></script>
+  </body>
+</html>
